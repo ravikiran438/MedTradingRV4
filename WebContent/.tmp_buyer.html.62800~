@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Buyer Page</title>
+</head>
+<body>
+	<h3>Please fill in the form to start the automatic negotiation</h3>
+	
+  <form action="GateWayServlet" method="POST" >
+  	<table>
+  		<tr>
+      	  <th></th>
+      	  <td><input type="hidden" name="action" value="buyer"/></td>
+		</tr>
+  		<tr>
+          <th>Name:</th>
+          <td><input type="text" name="name" id="name" value="" /></td>
+        </tr>
+      	
+        <tr>
+          <th>Looking For:</th>
+          <td>
+            <select name="condition">
+              <option value="Asthma">Asthma</option>              
+            </select>
+          </td>
+        </tr>
+		<tr>
+          <th>License Type:</th>
+          <td>
+            <select name="license">
+              <option value="commercial-use">Commercial</option>
+			  <option value="non-commercial-use">Non-Commercial</option>              
+            </select>
+          </td>
+        </tr>
+	    <tr>
+	      <th>Start Processing</th>
+	      <td><input type="Submit" value="Start" /></td>
+	    </tr>
+	    
+	</table>
+  </form>
+  <p><a href="index.html" title="Main Page" rel="external">Go Back</a></p>
+</body>
+</html>
